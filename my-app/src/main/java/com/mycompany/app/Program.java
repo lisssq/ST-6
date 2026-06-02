@@ -1,3 +1,4 @@
+package com.mycompany.app;
 // Реализация игры "Крестики-нолики" (3x3)
 // Минимаксный алгоритм
 
@@ -64,8 +65,8 @@ class Game {
                 || (board[0] == symbol && board[4] == symbol && board[8] == symbol)
                 || (board[2] == symbol && board[4] == symbol && board[6] == symbol)) {
             if (symbol == 'X') {
-                state = State.XWIN; 
-            }else if (symbol == 'O') {
+                state = State.XWIN;
+            } else if (symbol == 'O') {
                 state = State.OWIN;
             }
         } else {
@@ -94,10 +95,10 @@ class Game {
         State state = checkState(board);
         if ((state == State.XWIN || state == State.OWIN || state == State.DRAW)) {
             if ((state == State.XWIN && player.symbol == 'X') || (state == State.OWIN && player.symbol == 'O')) {
-                return +Game.INF; 
-            }else if ((state == State.XWIN && player.symbol == 'O') || (state == State.OWIN && player.symbol == 'X')) {
-                return -Game.INF; 
-            }else if (state == State.DRAW) {
+                return +Game.INF;
+            } else if ((state == State.XWIN && player.symbol == 'O') || (state == State.OWIN && player.symbol == 'X')) {
+                return -Game.INF;
+            } else if (state == State.DRAW) {
                 return 0;
             }
         }
