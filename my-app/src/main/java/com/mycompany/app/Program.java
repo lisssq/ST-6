@@ -1,14 +1,15 @@
+package com.mycompany.app;
 // Реализация игры "Крестики-нолики" (3x3)
 // Минимаксный алгоритм
 
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Random;
-import java.io.FileWriter;
-import java.io.PrintWriter;
-import java.io.IOException;
+import javax.swing.*;
 
 enum State { PLAYING, OWIN, XWIN, DRAW };
 
