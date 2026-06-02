@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.mycompany.app.GameLogicTest
+Test set: com.mycompany.app.ProgramTest
 -------------------------------------------------------------------------------
-Tests run: 45, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.251 s -- in com.mycompany.app.GameLogicTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.708 s -- in com.mycompany.app.ProgramTest
